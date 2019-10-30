@@ -1,3 +1,4 @@
+// Secondlife LSL client construct
 string MOTH(string s) {
   integer utime = llGetUnixTime();
   integer len = (llStringLength((string)utime) - 2);

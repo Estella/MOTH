@@ -23,7 +23,7 @@ if (!preg_match('/[0-9a-f]{64}/s', $MHASH)) { echo "INVALID"; exit; }
 /*******************************************************************************************************/
 $moth = new MOTH($secret);
 if ($moth->check_hash($MHASH)) {
-  echo "VALID";
+  echo "VALID"; // Needs code/backend to prevent replay attacks within the valid time window
 } else {
   echo "INVALID";
 }
